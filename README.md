@@ -69,7 +69,7 @@ Then reference them from `videos.json`:
 }
 ```
 
-The `thumbnail` field is optional. If omitted, the site uses `assets/images/video-placeholder.svg`.
+The `thumbnail` field is optional. If omitted, the site uses `assets/images/rwb-video-placeholder.svg`.
 
 For cheap hosting, YouTube/Vimeo embeds are still better for large or frequently watched videos. Local MP4 files are fine for a small practice library, but they make the Git repository larger and use your static host's bandwidth.
 

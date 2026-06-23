@@ -101,7 +101,7 @@ function getDefaultThumbnail(video) {
     return `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`;
   }
 
-  return "./assets/images/video-placeholder.svg";
+  return "./assets/images/rwb-video-placeholder.svg";
 }
 
 function openVideo(video) {
