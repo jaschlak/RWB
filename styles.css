@@ -337,7 +337,8 @@ main {
   color: var(--cream);
 }
 
-.video-section {
+.video-section,
+.rhythm-section {
   scroll-margin-top: 88px;
 }
 
@@ -368,6 +369,40 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 18px;
+}
+
+.rhythm-section {
+  margin-top: 38px;
+}
+
+.rhythm-list {
+  display: grid;
+  gap: 10px;
+}
+
+.rhythm-item {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.7fr) minmax(0, 1.3fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 249, 237, 0.9);
+}
+
+.rhythm-item h3,
+.rhythm-item p {
+  margin: 0;
+}
+
+.rhythm-item h3 {
+  font-size: 1rem;
+}
+
+.rhythm-item p {
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .video-card {
@@ -564,6 +599,7 @@ main {
 
   .controls,
   .community-section,
+  .rhythm-item,
   .section-heading {
     grid-template-columns: 1fr;
   }

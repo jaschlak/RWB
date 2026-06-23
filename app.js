@@ -1,4 +1,5 @@
 const grid = document.querySelector("#video-grid");
+const rhythmList = document.querySelector("#rhythm-list");
 const template = document.querySelector("#video-card-template");
 const search = document.querySelector("#search");
 const count = document.querySelector("#result-count");
@@ -52,6 +53,7 @@ async function loadVideos() {
   }
 
   renderVideos();
+  renderRhythmList();
 }
 
 function renderVideos() {
@@ -93,6 +95,36 @@ function renderVideos() {
     button.addEventListener("click", () => openVideo(video));
 
     grid.append(card);
+  });
+}
+
+function renderRhythmList() {
+  rhythmList.replaceChildren();
+
+  videos.forEach((video) => {
+    const item = document.createElement("article");
+    item.className = "rhythm-item";
+
+    const title = document.createElement("h3");
+    title.textContent = video.title;
+
+    const description = document.createElement("p");
+    description.textContent = video.description || "";
+
+    const meta = document.createElement("div");
+    meta.className = "meta-row";
+
+    const level = document.createElement("span");
+    level.className = "level";
+    level.textContent = video.level || "practice";
+
+    const tempo = document.createElement("span");
+    tempo.className = "tempo";
+    tempo.textContent = video.tempo || "";
+
+    meta.append(level, tempo);
+    item.append(title, description, meta);
+    rhythmList.append(item);
   });
 }
 
