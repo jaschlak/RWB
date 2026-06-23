@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "title": "Warmup Groove",
+      "description": "A short pocket-building loop for getting hands and feet moving.",
+      "youtubeId": "M7lc1UVf-VE",
+      "level": "beginner",
+      "tempo": "90 BPM",
+      "duration": "3:33"
+    },
+    {
+      "title": "Subdivision Drill",
+      "description": "Practice switching subdivisions while keeping the pulse steady.",
+      "youtubeId": "M7lc1UVf-VE",
+      "level": "intermediate",
+      "tempo": "110 BPM",
+      "duration": "3:33"
+    },
+    {
+      "title": "Accent Control",
+      "description": "Build dynamic control with alternating accents around the kit.",
+      "youtubeId": "M7lc1UVf-VE",
+      "level": "advanced",
+      "tempo": "120 BPM",
+      "duration": "3:33"
+    }
+  ]
+}

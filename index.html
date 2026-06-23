@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071007">
+    <title>DWOB Practice Library</title>
+    <meta
+      name="description"
+      content="A mobile-friendly rhythm video practice library for Drums Without Borders."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="window-dots" aria-hidden="true">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <a class="brand" href="./"><b>dwob</b>@jordanschlak:~/practice</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#videos">./videos</a>
+          <a href="./videos.json">./data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy terminal-window">
+          <div class="terminal-head">
+            <span>session.sh</span>
+            <span class="live-dot">rec</span>
+          </div>
+          <div class="terminal-body">
+            <p class="prompt-line"><span class="prompt">dwob@practice:~$</span> ./load-rhythms</p>
+            <p class="kicker">Drums Without Borders</p>
+            <h2 id="page-title">Rhythm reps, queued for your phone<span class="cursor" aria-hidden="true"></span></h2>
+            <p>
+              Fast access to warmups, groove loops, and technique drills without digging through a feed.
+            </p>
+            <div class="meta-line">
+              <span><b>route</b> /dwob</span>
+              <span><b>format</b> video library</span>
+              <span><b>deploy</b> static</span>
+            </div>
+            <a class="primary-action" href="#videos">open playlist</a>
+          </div>
+        </div>
+        <div class="signal-panel" aria-hidden="true">
+          <div class="scope">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="drum-mark"></div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Video filters">
+        <label class="search-field">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="groove, warmup, rudiment">
+        </label>
+        <div class="filter-group" role="group" aria-label="Difficulty">
+          <button class="chip is-active" type="button" data-level="all">All</button>
+          <button class="chip" type="button" data-level="beginner">Beginner</button>
+          <button class="chip" type="button" data-level="intermediate">Intermediate</button>
+          <button class="chip" type="button" data-level="advanced">Advanced</button>
+        </div>
+      </section>
+
+      <section id="videos" class="video-section" aria-labelledby="videos-title">
+        <div class="section-heading">
+          <p class="prompt-line"><span class="prompt">dwob@practice:~$</span> ls ./videos</p>
+          <h2 id="videos-title">Practice Videos</h2>
+          <p id="result-count"></p>
+        </div>
+        <div id="video-grid" class="video-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="video-card-template">
+      <article class="video-card">
+        <button class="thumbnail-button" type="button">
+          <img alt="">
+          <span class="play-badge">Play</span>
+        </button>
+        <div class="video-card-body">
+          <div class="video-card-title-row">
+            <h3></h3>
+            <span class="duration"></span>
+          </div>
+          <p class="description"></p>
+          <div class="meta-row">
+            <span class="level"></span>
+            <span class="tempo"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <dialog id="video-dialog" class="video-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <h2 id="dialog-title"></h2>
+        <button id="close-dialog" class="icon-button" type="button" aria-label="Close video">x</button>
+      </div>
+      <div id="player" class="player"></div>
+    </dialog>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
