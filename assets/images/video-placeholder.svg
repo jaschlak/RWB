@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
-  <title id="title">DWOB video placeholder</title>
+  <title id="title">Rhythm Without Borders video placeholder</title>
   <rect width="1280" height="720" fill="#291b13"/>
   <path d="M0 0h1280v720H0z" fill="url(#grid)"/>
   <circle cx="640" cy="360" r="174" fill="#fff7e7" opacity=".12"/>
   <circle cx="640" cy="360" r="156" fill="none" stroke="#d89a35" stroke-width="14" opacity=".82"/>
   <circle cx="640" cy="360" r="82" fill="none" stroke="#b94f2f" stroke-width="10" opacity=".75"/>
   <path d="M604 279v162l134-81z" fill="#fff7e7"/>
-  <text x="64" y="96" fill="#ffd990" font-family="Georgia, serif" font-size="42">DWOB practice video</text>
+  <text x="64" y="96" fill="#ffd990" font-family="Georgia, serif" font-size="42">Rhythm Without Borders</text>
   <defs>
     <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
       <path d="M42 0H0v42" fill="none" stroke="#fff7e7" stroke-width="1" opacity=".10"/>

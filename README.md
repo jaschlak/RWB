@@ -1,11 +1,11 @@
-# DWOB Practice Library
+# Rhythm Without Borders Practice Library
 
-Static, phone-friendly rhythm video library for `jordanschlak.com/dwob`.
+Static, phone-friendly rhythm video library for Rhythm Without Borders.
 
 GitHub repository:
 
 ```text
-git@github.com:jaschlak/DWOB.git
+git@github.com:jaschlak/RWB.git
 ```
 
 ## Cheapest hosting recommendation
@@ -90,15 +90,15 @@ http://localhost:8080
 ## Run with Docker
 
 ```powershell
-docker build -t dwob-site .
-docker run --rm -p 8080:80 dwob-site
+docker build -t rwb-site .
+docker run --rm -p 8080:80 rwb-site
 ```
 
 ## Deploy path
 
 Recommended first deploy:
 
-1. Push this repository to `git@github.com:jaschlak/DWOB.git`.
+1. Push this repository to `git@github.com:jaschlak/RWB.git`.
 2. In GitHub, open Settings -> Pages.
 3. Set Build and deployment -> Source to GitHub Actions.
 4. Push to `main`.
@@ -107,7 +107,7 @@ Recommended first deploy:
 GitHub Pages project URL:
 
 ```text
-https://jaschlak.github.io/DWOB/
+https://jaschlak.github.io/RWB/
 ```
 
-For `jordanschlak.com/dwob`, use Cloudflare Pages or CloudFront routing in front of the GitHub Pages URL, or host the built static files directly on Cloudflare Pages/AWS with that path configured.
+For `jordanschlak.com/rwb`, use Cloudflare Pages or CloudFront routing in front of the GitHub Pages URL, or host the built static files directly on Cloudflare Pages/AWS with that path configured.
