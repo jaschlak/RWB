@@ -24,6 +24,22 @@ Kubernetes is not the cheapest production choice for this site. The included `Do
 
 Update `videos.json`.
 
+## Add group photos
+
+Put real group photos in:
+
+```text
+assets/images/group/
+```
+
+The homepage automatically uses this file for the hero image when present:
+
+```text
+assets/images/group/hero-group.jpg
+```
+
+Landscape photos work best. Keep each image around 1-2 MB if possible, and make sure everyone pictured is okay with the photo being public.
+
 For videos hosted on YouTube:
 
 ```json

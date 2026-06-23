@@ -242,6 +242,52 @@ main {
   background: rgba(255, 249, 237, 0.88);
 }
 
+.community-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(280px, 1.18fr);
+  gap: 24px;
+  align-items: center;
+  margin: 30px 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 249, 237, 0.9);
+  box-shadow: 0 14px 35px rgba(85, 50, 26, 0.09);
+}
+
+.community-copy {
+  display: grid;
+  gap: 12px;
+  padding: clamp(8px, 2vw, 20px);
+}
+
+.community-copy .eyebrow {
+  color: var(--terracotta);
+}
+
+.community-copy h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
+.community-copy p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.community-section img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 16px 34px rgba(85, 50, 26, 0.18);
+}
+
 .search-field {
   display: grid;
   gap: 8px;
@@ -517,6 +563,7 @@ main {
   }
 
   .controls,
+  .community-section,
   .section-heading {
     grid-template-columns: 1fr;
   }
